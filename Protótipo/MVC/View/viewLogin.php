@@ -16,11 +16,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
 		<script src="js/slick.js"></script>
-		<link href="css/slick.css" rel="stylesheet"/>
+		<link href="../../css/slick.css" rel="stylesheet"/>
 		<script src="js/main.js"></script>	
-		<link href="css/fontawesome.min.css" rel="stylesheet">
-		<link href="css/all.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="../../css/fontawesome.min.css" rel="stylesheet">
+		<link href="../../css/all.css" rel="stylesheet">
+		<link href="../../css/style.css" rel="stylesheet">
 	</head>
 
 	<body style="background-color: #ECECEC">

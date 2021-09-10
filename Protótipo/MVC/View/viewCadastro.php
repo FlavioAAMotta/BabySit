@@ -16,13 +16,13 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
 		<script src="js/slick.js"></script>
-		<link href="css/slick.css" rel="stylesheet"/>
+		<link href="../../css/slick.css" rel="stylesheet"/>
 		<script src="js/main.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>	
-		<link href="css/fontawesome.min.css" rel="stylesheet">
-		<link href="css/all.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="../../css/fontawesome.min.css" rel="stylesheet">
+		<link href="../../css/all.css" rel="stylesheet">
+		<link href="../../css/style.css" rel="stylesheet">
 	</head>
 
 	<body style="background-color: #ECECEC">
