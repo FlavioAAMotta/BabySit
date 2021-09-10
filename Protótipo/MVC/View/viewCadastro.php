@@ -28,11 +28,8 @@
 	<body style="background-color: #ECECEC">
 
 		<?php 
-			include("painel-controle/functions/bd.php");
-
-			$verificaUsuario = $pdo->prepare("SELECT * FROM usuarios");
-			$verificaUsuario->execute();
-			$totalUsuarios = $verificaUsuario->fetchAlL(); 
+			include_once("../Model/modelBancoDeDados.php");
+			include_once("../Model/modelLogin.php"); 
 		?>
 
 		<section class="tela-cadastro">
