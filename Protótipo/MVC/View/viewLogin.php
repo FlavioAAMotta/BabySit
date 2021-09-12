@@ -46,7 +46,7 @@
 					</div><br><br>
 
 					<button>Entrar</button><br><br>
-					<a href="sign-up.php" style="text-align: center">Ainda não tem uma conta? Clique aqui</a>
+					<a href="viewCadastro.php" style="text-align: center">Ainda não tem uma conta? Clique aqui</a>
 				</form>
 
 				<?php 

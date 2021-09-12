@@ -29,7 +29,8 @@
 
 		<?php 
 			include_once("../Model/modelBancoDeDados.php");
-			include_once("../Model/modelLogin.php"); 
+			include_once("../Model/modelLogin.php");
+			include_once("../Model/modelCadastroUsuario.php"); 
 		?>
 
 		<section class="tela-cadastro">
@@ -37,7 +38,7 @@
 				<h2>Sign Up</h2>
 				<p>Preencha todos os campos para realizar seu cadastro</p>
 
-				<form method="POST">
+				<form method="POST" action="../Model/modelCadastroUsuario.php">
 					
 					<div class="input-box">
 						<div>
@@ -56,7 +57,7 @@
 					<div class="input-box">
 						<div>
 							<label>CPF</label><br>
-							<input type="text" id="frmCpf" name="cpf-usuario" placeholder="___.___.___-__" required  pattern="[0-9]+$" ><br>
+							<input type="text" id="frmCpf" name="cpf-usuario" placeholder="___.___.___-__" required><br>
 						</div>
 
 						<div class="input-direita">
@@ -73,7 +74,7 @@
 
 						<div class="input-direita">
 							<label>Complemento</label><br>
-							<input type="text" name="complemento-usuario" placeholder="Informações extras..." required><br>
+							<input type="text" name="complemento-usuario" placeholder="Informações extras..."><br>
 						</div>
 					</div><br>
 
@@ -91,11 +92,11 @@
 					
 					<div>
 						<label>Sexo: </label>
-						<input type="radio" name="sexo-usuario" required value="Feminino">
-						<label>Masculino</label>
 						<input type="radio" name="sexo-usuario" required value="Masculino">
+						<label>Masculino</label>
+						<input type="radio" name="sexo-usuario" required value="Feminino">
 						<label>Feminino</label>
-						<input type="radio" name="sexo-usuario" required value="outro">
+						<input type="radio" name="sexo-usuario" required value="Outro">
 						<label>Outro</label>
 					</div><br>
 
@@ -113,7 +114,7 @@
 
 					<div class="confirma-cadastro">
 						<button>Cadastrar</button><br>
-						<a href="login-adm.php" style="text-align: center">Já tem uma conta? Clique aqui</a>
+						<a href="viewLogin.php" style="text-align: center">Já tem uma conta? Clique aqui</a>
 					</div>
 				</form>
 
