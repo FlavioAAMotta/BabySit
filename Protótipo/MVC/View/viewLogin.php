@@ -49,9 +49,14 @@
 					<a href="viewCadastro.php" style="text-align: center">Ainda não tem uma conta? Clique aqui</a>
 				</form>
 
-				<?php 
-					include_once("../Controller/controllerLogin.php");	
-				?>
+				<br>
+				
+				<div style="text-align: center">
+					<?php 
+						include_once("../Model/modelLogin.php");
+						include_once("../Controller/controllerLogin.php");	
+					?>
+				</div>
 
 			</div>
 		</section><!-- FIM TELA-LOGIN -->
