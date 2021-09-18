@@ -5,8 +5,10 @@
 ?>
 
 <section class="tela-cadastro">
+
+	<h4>TESTE</h4>
 	<div class="cadastro-box">
-		<h2>Sign Up</h2>
+		<h2>Cadastre-se</h2>
 		<p>Preencha todos os campos para realizar seu cadastro</p>
 
 		<form method="POST" action="../Model/modelCadastroUsuario.php">

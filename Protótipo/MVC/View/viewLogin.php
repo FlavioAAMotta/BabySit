@@ -6,16 +6,16 @@
 
 <section class="tela-login">
 	<div class="login-box">
-		<h2>Log in</h2>
+		<h2>Entre</h2>
 		<form method="POST">
 			<label>Email</label>
 			<div class="input">
-				<i style="margin-right: 15px;color: #2B2C30" class="fas fa-user"></i>
+				<i style="margin-right: 10px;color: #2B2C30" class="fas fa-user"></i>
 				<input type="text" name="login" placeholder="Digite seu email..." required><br>
 			</div><br>
 			<label>Senha</label>
 			<div class="input">
-				<i style="margin-right: 15px; color: #2B2C30" class="fas fa-lock"></i>
+				<i style="margin-right: 10px; color: black" class="fas fa-lock"></i>
 				<input type="password" name="senha" placeholder="Digite sua senha..." required>
 			</div><br><br>
 

@@ -1,3 +1,7 @@
+/********************************************************************
+						ARQUIVO DO PAINEL ADMINISTRATIVO
+********************************************************************/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -34,17 +38,20 @@ a{
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
-	padding: 10% 0;
+	padding-top: 5%;
+	color: black!important;
+	font-weight: bold;
 }
 
 .login-box{
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 15px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 15px -6px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 15px -6px rgba(0,0,0,0.75);
 	width: 450px;
 	background-color: white;
 	border-radius: 10px;
 	padding: 40px 60px;
+	background-color: rgba(255,255,255,0.2);
 }
 
 .login-box h2{
@@ -61,6 +68,10 @@ a{
 .input input{
 	border: none;
 	width: 100%;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0);
 }
 
 input:focus{
@@ -102,16 +113,17 @@ form{
 	align-items: center;
 	justify-content: space-around;
 	width: 100%;
-	padding: 10% 0;
+	padding-top: 5%;
 }
 
 .cadastro-box{
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 15px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 15px -6px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 15px -6px rgba(0,0,0,0.75);
 	background-color: white;
 	border-radius: 10px;
 	padding: 40px 20px;
+	background-color: rgba(255,255,255,0.2);
 }
 
 .cadastro-box h2, p{
