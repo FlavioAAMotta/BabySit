@@ -13,7 +13,7 @@
 		$sexoUsuario = $_POST['sexo-usuario'];
 		$emailUsuario = $_POST['email-usuario'];
 		$senhaUsuario = $_POST['senha-usuario'];
-
+		
 		$addUsuario = $pdo->prepare("INSERT INTO usuarios_teste (nome_usuario, sobrenome_usuario, cpf_usuario, nasc_usuario, endereco_usuario, complemento_usuario, cep_usuario, telefone_usuario, sexo_usuario, email_usuario, senha_usuario) VALUES ('$nomeUsuario', '$sobrenomeUsuario', '$cpfUsuario', '$dataUsuario', '$enderecoUsuario', '$complementoUsuario', '$cepUsuario', '$telefoneUsuario', '$sexoUsuario', '$emailUsuario', '$senhaUsuario')");
 
 		$addUsuario->execute();

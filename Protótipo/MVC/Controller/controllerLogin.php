@@ -5,13 +5,12 @@
 			if($totalUsuarios[$i]['email_usuario'] == $_POST['login'] and $totalUsuarios[$i]['senha_usuario'] == $_POST['senha']){
 				
 				$usuarioLogado = $_POST['login'];
-				$nomeUsuario = $totalUsuarios[$i]['nome_usuario'];
-				
+				$nomeUsuario = $totalUsuarios[$i]['nome_usuario'];				
 				
 				$_SESSION['login'] = $usuarioLogado;
 				$_SESSION['nome'] = $nomeUsuario;
 				
-				echo "<script>document.location='../View/viewPainel.php'</script>";		
+				echo "<script>document.location='../View/viewSelecionarPerfil.php'</script>";		
 			}
 			else{
 				if($contErro == 0){
