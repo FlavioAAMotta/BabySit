@@ -6,7 +6,6 @@
 
 <section class="tela-login">
 	<div class="login-box">
-		<h2>Entre</h2>
 		<form method="POST">
 			<label>Email</label>
 			<div class="input">
