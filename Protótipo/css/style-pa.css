@@ -215,3 +215,47 @@ form{
 	height: 405px;
 	margin: 40px 60px;
 }
+
+/*-------------------------------------------------------
+				INICIO TELA EDITAR PERFIL
+-------------------------------------------------------*/
+
+.editar-info-perfil{
+	text-align: center;
+}
+
+.editar-info-perfil h2{
+	font-size: 50px;
+}
+
+.editar-info-perfil p{
+	font-size: 32px;
+}
+
+.formulario-editar-perfil{
+	width: 50%;
+	text-align: left;
+	margin: 40px auto;
+}
+
+.formulario-editar-perfil label{
+	font-size: 22px;
+}
+
+.confirma-editar{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.confirma-editar button{
+	cursor: pointer;
+	font-weight: bold;
+	color: black;
+	padding: 7px 0;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 200px;
+	margin: 0 auto;
+	background-color: #E5DCE0;
+	font-size: 24px;
+}

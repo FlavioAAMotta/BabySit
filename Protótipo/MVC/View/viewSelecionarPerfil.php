@@ -23,7 +23,7 @@
 			<div class="selecionar-perfil-box">
 				<img src="../../images/profile.png">
 				<h2>Nome</h2>
-				<p>Babá</p>
+				<p>Família</p>
 			</div>
 		</a>
 	</div>

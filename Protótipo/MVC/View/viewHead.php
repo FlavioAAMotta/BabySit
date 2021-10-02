@@ -16,6 +16,8 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="../../js/main.js"></script>	
+		<script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<script src="https://rawgit.com/RobinHerbots/Inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
 		<link href="../../css/fontawesome.min.css" rel="stylesheet">
 		<link href="../../css/all.css" rel="stylesheet">
 		<link href="../../css/style-pa.css" rel="stylesheet">
