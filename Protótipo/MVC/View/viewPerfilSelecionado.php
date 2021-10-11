@@ -1,17 +1,17 @@
 <?php 
 	include_once("viewHead.php");
-	include_once("../Model/modelBancoDeDados.php");	
+	//include_once("../Model/modelBancoDeDados.php");	
 ?>
 
 <section class="editar-info-perfil">
 	
 	<?php 
-		if($_GET['perfil'] == 'baba'){
+		/*if($_GET['perfil'] == 'baba'){
 			echo "Perfil escolhido: baba";
 		}
 		else{
 			echo "Perfil escolhido: família";	
-		}
+		}*/
 	?>
 
 	<h2>Edite suas informações pessoais</h2>

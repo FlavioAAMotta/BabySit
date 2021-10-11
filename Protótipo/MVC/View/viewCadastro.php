@@ -1,7 +1,7 @@
 <?php 
 	include_once("viewHead.php");
-	include_once("../Model/modelBancoDeDados.php");	
-	include_once("../Model/modelCadastroUsuario.php"); 
+	//include_once("../Model/modelBancoDeDados.php");	
+	//include_once("../Model/modelCadastroUsuario.php"); 
 ?>
 
 <section class="tela-cadastro">
@@ -10,7 +10,8 @@
 		<h2>Cadastre-se</h2>
 		<p>Preencha todos os campos para realizar seu cadastro</p>
 
-		<form method="POST" action="../Model/modelCadastroUsuario.php">
+		<!--<form method="POST" action="../Model/modelCadastroUsuario.php">-->
+		<form method="POST">	
 			
 			<div class="input-box">
 				<div>

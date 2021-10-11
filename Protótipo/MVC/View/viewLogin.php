@@ -1,7 +1,7 @@
 <?php 
 	include_once("viewHead.php");
-	include_once("../Model/modelBancoDeDados.php");	
-	include_once("../Model/modelLogin.php");
+	//include_once("../Model/modelBancoDeDados.php");	
+	//include_once("../Model/modelLogin.php");
 ?>
 
 <section class="tela-login">
@@ -27,7 +27,7 @@
 		
 		<div style="text-align: center">
 			<?php 
-				include_once("../Model/modelLogin.php");
+				//include_once("../Model/modelLogin.php");
 				include_once("../Controller/controllerLogin.php");	
 			?>
 		</div>

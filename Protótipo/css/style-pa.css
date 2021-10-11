@@ -259,3 +259,163 @@ form{
 	background-color: #E5DCE0;
 	font-size: 24px;
 }
+
+/*-------------------------------------------------------
+					INICIO PERFIL PRIVADO
+-------------------------------------------------------*/
+
+.perfil-privado{
+	text-align: center;
+}
+
+.perfil-privado p, a{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.info-perfil-wrapper{
+	padding: 30px 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.info-perfil-card{
+	width: 350px;
+	text-align: center;
+	border: 1px solid rgba(249,249,249, 0.3);
+	padding: 30px 10px;
+	border-radius: 20px;
+	background-color: rgba(255,255,255,0.3)
+}
+
+.info-perfil-card img{
+	padding: 10px;
+	width: 50%;
+	border-radius: 20px;
+}
+
+.foto-perfil-box button{
+	border-radius: 30px;
+	padding: 10px 25px;
+	font-weight: bold;
+	border: none;
+	
+	background-image: linear-gradient(to right, white 0%, #F5F7F9  51%, #E5E9EE  100%);
+	cursor: pointer;
+	-webkit-box-shadow: -2px 11px 5px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 11px 5px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 11px 5px -9px rgba(0,0,0,0.75);
+}
+
+.extra-info-perfil-box{
+	width: 250px;
+}
+
+.extra-info-perfil-box p{
+	text-align: left;
+}
+
+.avaliacao-perfil-box i{
+	color: #A8C3D8;
+}
+
+.icon-exp-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon-exp-box{
+	width: 70px;
+	height: 70px;
+	background-color: #A8C3D8;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.icon-exp-box p{
+	text-align: center;
+}
+
+.info-tarefas-perfil-box{
+	text-align: left;
+}
+
+.info-tarefas-perfil-box label{
+	font-weight: bold;
+}
+
+.info-perfil-disponibilidade-wrapper{
+	width: 400px;
+	text-align: left;
+	margin-left: 150px;
+}
+
+.info-perfil-disponibilidade-card{
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.info-perfil-disponibilidade-card th{
+	padding-left: 3px;
+}
+
+td{
+	padding-bottom: 10px!important;
+}
+
+.info-perfil-disponibilidade-card th, td{
+	width: 100px;
+}
+
+.check-info-perfil-disponibilidade{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #A8C3D8;
+}
+
+.uncheck-info-perfil-disponibilidade{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #C4C4C4;
+}
+
+.perfil-privado > button{
+	border-radius: 10px;
+	border: 1px solid black;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #E6DCDF;
+	padding: 10px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------
+					MEDIA QUERIES
+-------------------------------------------------------*/
+
+@media screen and (max-width: 1024px){
+	.info-perfil-wrapper{
+		flex-direction: column; 
+		align-items: center;
+	}
+
+	.info-perfil-disponibilidade-wrapper{
+		width: 90%;
+		margin-left: 0;
+		margin: 20px auto;
+	}
+
+	.selecionar-perfil-wrapper{
+		flex-direction: column;
+	}
+
+	.divisor-perfil-box{
+		display: none;
+	}
+}

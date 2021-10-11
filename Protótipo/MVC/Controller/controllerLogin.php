@@ -1,4 +1,21 @@
 <?php 
+	
+	if(isset($_POST['login'])){	
+		$login = $_POST['login'];
+		$senha = $_POST['senha'];
+
+		if($login == 'flavio' && $senha == '123'){
+			echo "<script>document.location='../View/viewSelecionarPerfil.php'</script>";
+		}
+		else{
+			echo "DADOS INCORRETOS!";
+		}		
+	}
+
+
+	
+
+	/*
 	$contErro = 0;
 	for($i=0;$i<count($totalUsuarios);$i++){
 		if(isset($_POST['login']) and isset($_POST['senha'])){
@@ -19,5 +36,5 @@
 				}
 			}
 		}
-	}
+	}*/
 ?>
