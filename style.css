@@ -1,0 +1,128 @@
+body{
+    background-image: url(fundo.png)
+}
+#menu{
+    position: absolute;
+    width: 1373px;
+    height: 60px;
+    left: 31px;
+    top: 23px;
+    text-align: center;
+}
+.titulo{
+    position: absolute;
+    width: 779px;
+    height: 100px;
+    left: 330px;
+    top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #000000;
+}
+.ordem1{
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 138px;
+    top: 255px;
+    border-radius: 10px;
+    border-style: groove;
+    border: 1px solid #000000;
+}
+.card1{
+    position: absolute;
+    width: 322px;
+    height: 423px;
+    left: 100px;
+    top: 250px;
+    background: #FFD5CF;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+
+}
+.ordem2{
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 235px;
+    top: 155px;
+    border-radius: 10px;
+    border-style: groove;
+    border: 1px solid #000000;
+}
+.card2{
+    position: absolute;
+    width: 528px;
+    height: 288px;
+    left: 450px;
+    top: 250px;
+    text-align: center;
+    background: #FFEBC2;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 35.3531px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.ordem3{
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 215px;
+    top: 155px;
+    border-radius: 10px;
+    border-style: groove;
+    border: 1px solid #000000;
+}
+.card3{
+    position: absolute;
+    width: 480px;
+    height: 243px;
+    left: 473px;
+    top: 580px;
+    text-align: center;
+    background: #E6BDFF;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.ordem4{
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    left: 138px;
+    top: 255px;
+    border-radius: 10px;
+    border-style: groove;
+    border: 1px solid #000000;
+}
+
+.card4{
+    position: absolute;
+    width: 322px;
+    height: 423px;
+    left: 1016px;
+    top: 250px;
+    background: #D0FFE3;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
