@@ -20,14 +20,21 @@ body{
 }
 
 a{
-	text-decoration: none;
-	color: black;
+	text-decoration: none!important;
+	color: black!important;
 }
+
+li a:hover{
+    color: white!important;
+    transition: 0.5s!important;
+}
+
 
 .nav-menu{
 	padding: 10px 0;
 	justify-content: space-around;
 	display: flex;
+	height: 70px;
 }
 
 .lista-menu-principal{
@@ -37,8 +44,8 @@ a{
 }
 
 .lista-menu-principal > li:hover{
-	color: white;
-	transition: 0.5s;
+	color: white!important;
+	transition: 0.5s!important;
 }
 
 li{
@@ -69,9 +76,233 @@ li{
 	border: 3px solid black;
 	border-radius: 20px;
 	padding: 3px 10px;
-	font-size: 14px;
+	font-size: 18px;
 	position: relative;
-	height: 40px;
+	height: 35px;
+}
+
+/********************************************************************
+						HOME PAGE
+********************************************************************/
+
+
+a:any-link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.f1 {
+    width: 850.99px;
+    height: 220px;
+    left: 27px;
+    top: 180px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.f2 {
+    width: 259px;
+    height: 99.73px;
+    left: 27px;
+    font-size: 20px;
+    font-weight: bold;
+    top: 390px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-size: 100% auto;
+    padding: 40px 20px;
+}
+
+.content-home {
+    display: flex;
+    justify-content: center;
+    background-size: 100% auto;
+    padding: 80px;
+    
+}
+
+.home-body{
+	background-color: white!important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.x1 {
+    background-image: url(imagens/fundo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+}
+
+.space {
+    margin: 50px;
+}
+
+.button {
+    width: 210px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.3));
+    border-radius: 50px;
+    background: radial-gradient(100% 1081.68% at 0% 27.78%, #DCD6D6 5.21%, #D9C9D3 100%);
+}
+
+.button2 {
+    width: 90px;
+    height: 39px;
+    font-size: 18px;
+    outline: none;
+    font-weight: bolder;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.3));
+    border-radius: 50px;
+    background: radial-gradient(100% 1081.68% at 0% 27.78%, #DCD6D6 5.21%, #D9C9D3 100%);
+}
+
+.imgheader {
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+}
+
+.cardboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boxdesign {
+    background: radial-gradient(100% 1000% at 0% 0%, #B1D1E2 0%, #EABDBD 99.98%, #FFB8B8 99.99%, rgba(184, 214, 230, 0) 100%);
+    filter: drop-shadow(6px 6px 10px rgba(2, 2, 2, 0.3));
+    border-radius: 30px;
+    width: 230px;
+    height: 275px;
+    margin: 40px;
+}
+
+.boxdesign img {
+    position: relative;
+    top: -51px;
+    left: 64px;
+
+}
+
+.checked {
+    color: #8BB8DB;
+}
+
+.starsposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.boxcontent {
+    display: flex;
+    flex-direction: row;
+}
+
+.justifytxt {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 10px;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.fundos {
+    background-image: url(../images/elipses.png);
+    background-color: white!important;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+
+}
+
+.z1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.final {
+	padding: 40px 0;
+    background-color: white!important;
+    text-align: center;
+}
+
+.a1 {
+    background: linear-gradient(180deg, #E7F1F8 0%, rgba(200, 227, 247, 0) 100%);
+    border: 2px solid #D8EDFC;
+    filter: drop-shadow(7px 7px 10px rgba(1, 1, 1, 0.25));
+    border-radius: 25px;
+}
+
+.a2 {
+    background: linear-gradient(180deg, #E1DCF5 0%, rgba(226, 219, 253, 0) 100%);
+    border: 2px solid rgba(200, 187, 250, 0.7);
+    filter: drop-shadow(7px 7px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+}
+
+.a3 {
+    background: linear-gradient(180deg, #FFE2E6 0%, rgba(251, 224, 227, 0) 100%);
+    border: 2px solid rgba(255, 205, 211, 0.7);
+    filter: drop-shadow(7px 7px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+}
+
+.cardF1 {
+    text-align: center;
+
+}
+
+.cardF2 {
+    text-align: center;
+
+
+}
+
+.cardF3 {
+    text-align: center;
+
+
+}
+
+.p1 {
+    margin-top: 20px;
+}
+
+.pesquisa {
+    width: 500px;
+}
+
+#cidade {
+    background-color: #ECE6E6;
 }
 
 /********************************************************************

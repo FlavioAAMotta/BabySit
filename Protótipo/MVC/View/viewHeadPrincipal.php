@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <title>Página dos pais</title>
+    <title>BabyCare</title>
 </head>
 
 <body>
 
 	<section class="nav-menu">
-		<h1><a href="viewHome.php">LOGO</a></h1>	
+		<a href="viewHome.php"><img src="../../images/logo.png"></a>
 		<div class="menu-desktop">
 			<ul class="lista-menu-principal">
 				<li id="sub-lista">
@@ -22,13 +25,13 @@
 						<li><a href="viewPais.php">Sou pai</a></li>
 					</ul>
 				</li>
-				<li>Babás</li>
-				<li>Cadastro</li>
+				<li><a href="#">Babás</a></li>
+				<li><a href="viewCadastro.php">Cadastro</a></li>
 			</ul>
 		</div>
 		
 		<div class="minha-conta">
-			<a href="viewLogin.php"><h2>Minha conta</h2></a>
+			<a href="viewLogin.php">Minha conta</a>
 		</div>
 	</section><!-- FIM NAV-MENU-DESKTOP -->
 

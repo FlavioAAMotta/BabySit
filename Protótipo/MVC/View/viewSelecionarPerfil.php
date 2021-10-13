@@ -10,7 +10,7 @@
 	<h3>Selecione o perfil que deseja administrar</h3>
 
 	<div class="selecionar-perfil-wrapper">
-		<a href="viewPerfilSelecionado.php?perfil=baba">
+		<a href="viewPerfilPrivado.php">
 			<div class="selecionar-perfil-box">
 				<img src="../../images/profile.png">
 				<h2>Nome</h2>
@@ -20,7 +20,7 @@
 
 		<div class="divisor-perfil-box"></div>
 
-		<a href="viewPerfilSelecionado.php?perfil=familia">
+		<a href="viewPerfilPrivado.php">
 			<div class="selecionar-perfil-box">
 				<img src="../../images/profile.png">
 				<h2>Nome</h2>

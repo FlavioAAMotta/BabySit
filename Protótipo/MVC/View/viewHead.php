@@ -28,8 +28,10 @@
 		<header>			
 			
 			<div class="nav-bar container">
-				<p>LOGO</p>
-				<div class="botao-minha-conta"><p>MINHA CONTA</p></div>
+				<a href="viewHome.php"><img src="../../images/logo.png"></a>
+				<div class="minha-conta">
+					<a href="viewLogin.php">Minha conta</a>
+				</div>
 			</div>
 			
 		</header><!-- FIM DO HEADER -->
