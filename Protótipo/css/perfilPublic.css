@@ -1,22 +1,15 @@
-h3{/*Classe para aumentar um pouco o <p> e deixa a letra em negrito*/
-	font-weight: bold;
-	
-}
 
-p{
+.justificado{
 	text-align: justify;
 	
 }
 
-img{
-	width: 100%;
-}
 
-div{
+.margem{
 	margin: 5px 5px 5px 5px;
 }
 
-p.negrito{
+negrito{
 	font-weight: bold;
 }
 
