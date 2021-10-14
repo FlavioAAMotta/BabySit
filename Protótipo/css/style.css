@@ -306,7 +306,38 @@ IMG.displayed {
 }
 
 /********************************************************************
-						PÁGINA PAIS
+						PÁGINA PERFIL PUBLICO
+********************************************************************/
+
+h3{/*Classe para aumentar um pouco o <p> e deixa a letra em negrito*/
+    font-weight: bold;
+    
+}
+
+p{
+    text-align: justify;
+    
+}
+
+img{
+    width: 100%;
+}
+
+div{
+    margin: 5px 5px 5px 5px;
+}
+
+p.negrito{
+    font-weight: bold;
+}
+
+.perfil-publico{
+    margin: 20px 20px 20px 20px;
+
+}
+
+/********************************************************************
+                        PAGINA PERFIL
 ********************************************************************/
 
 
