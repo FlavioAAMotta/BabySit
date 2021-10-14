@@ -14,7 +14,7 @@
                     </p>
                 </div>
                 <div>
-                    <button type="button" class="button">Ver Perfis ➞</button>
+                    <a href="viewVisualizarBabas.php"><button type="button" class="button">Ver Perfis ➞</button></a>
                 </div>
             </div>
             <div class="imgheader">
