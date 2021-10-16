@@ -15,7 +15,7 @@
 
 <body>
 
-	<section class="nav-menu">
+	<section class="nav-menu container-principal">
 		<a href="viewHome.php"><img src="../../images/logo.png"></a>
 		<div class="menu-desktop">
 			<ul class="lista-menu-principal">

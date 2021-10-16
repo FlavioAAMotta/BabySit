@@ -1,6 +1,6 @@
 
 <?php include_once("viewHeadPrincipal.php");;?>
-    <section class="x1">
+    <section class="x1 container-principal">
         
         <div class="header">
             <div>
@@ -23,10 +23,10 @@
         </div>
     </section>
     <section class="home-body">
-        <div class="content-home">
+        <div class="content-home  container-principal">
             <h1 class="bold">Avaliações</h1>
         </div>
-        <div class="cardboxes">
+        <div class="cardboxes  container-principal">
             <div class="boxdesign">
                 <img src="../../images/foto4.png" alt="baba4">
                 <div class="starsposition">
@@ -107,11 +107,11 @@
         </div>
     </section><!-- FIM DO HOME-BODY -->
 
-    <div class="fundos">
+    <div class="fundos ">
         <div>
             <IMG class=" displayed" src="../../images/gps.png" alt="gps">
         </div>
-        <div class="z1">
+        <div class="z1  container-principal">
             <h1><b>Procure sua região</b></h1>
             <p>Você procura por:</p>
             <form>
@@ -123,13 +123,13 @@
             </form>
         </div>
     </div>
-    <div class="final">
-        <div>
+    <div class="final ">
+        <div class=" container-principal">
             <h1><b>Tenha serviço rápido e de qualidade</b></h1>
         </div>
         <br>
         <br>
-        <div class="d-flex justify-content-around" style="height: 500px; width: 1000px; margin:0 auto">
+        <div class="d-flex justify-content-around  container-principal" style="height: 500px; width: 1000px; margin:0 auto">
             <div class="a1 align-self-start p-2">
                 <div class="cardF2">
                     <img src="../../images/Group.png" alt="group">

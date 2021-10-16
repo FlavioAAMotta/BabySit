@@ -3,10 +3,10 @@
 	//include_once("../Model/modelBancoDeDados.php");	
 ?>
 
-<section class="perfil-privado">
+<section class="perfil-privado container-principal">
 	
 	<h2>Suas informações:</h2>
-
+	<br>
 	<div class="info-perfil-wrapper">
 		<div class="info-perfil-card">
 			<div class="foto-perfil-box">

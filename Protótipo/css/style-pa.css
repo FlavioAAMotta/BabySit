@@ -19,13 +19,14 @@ a{
 	color: black;
 }
 
-.container{
+.container-principal{
 	max-width: 1280px;
-	margin:0 auto;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .nav-bar{
-	padding: 10px 0;
+	padding-top: 10px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -285,9 +286,8 @@ form{
 }
 
 .info-perfil-wrapper{
-	padding: 30px 40px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .info-perfil-card{
@@ -360,7 +360,7 @@ form{
 .info-perfil-disponibilidade-wrapper{
 	width: 400px;
 	text-align: left;
-	margin-left: 150px;
+	margin: 20px 0;
 }
 
 .info-perfil-disponibilidade-card{
