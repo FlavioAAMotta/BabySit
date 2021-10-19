@@ -1,8 +1,8 @@
 
 <?php include_once("viewHeadPrincipal.php");;?>
-    <section class="x1 container-principal">
+    <section class="x1 ">
         
-        <div class="header">
+        <div class="header container-principal">
             <div>
                 <div>
                     <p class="f1">A comunidade de cuidados infantis

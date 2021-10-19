@@ -309,8 +309,7 @@ form{
 	border-radius: 30px;
 	padding: 10px 25px;
 	font-weight: bold;
-	border: none;
-	
+	border: none;	
 	background-image: linear-gradient(to right, white 0%, #F5F7F9  51%, #E5E9EE  100%);
 	cursor: pointer;
 	-webkit-box-shadow: -2px 11px 5px -9px rgba(0,0,0,0.75);
@@ -323,6 +322,10 @@ form{
 }
 
 .extra-info-perfil-box p{
+	text-align: left;
+}
+
+.exp-info-formacao{
 	text-align: left;
 }
 
@@ -406,6 +409,16 @@ td{
 	cursor: pointer;
 }
 
+.descricao-perfil-privado{
+	resize: none;
+	width: 200px;
+	height: 100px;
+	margin-top: 10px;
+	padding: 5px;
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+}
+
 /*-------------------------------------------------------
 					MEDIA QUERIES
 -------------------------------------------------------*/
@@ -430,3 +443,4 @@ td{
 		display: none;
 	}
 }
+

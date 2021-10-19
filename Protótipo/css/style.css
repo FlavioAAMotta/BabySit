@@ -30,12 +30,18 @@ li a:hover{
     transition: 0.5s!important;
 }
 
-
 .nav-menu{
 	padding-top: 10px;
 	justify-content: space-between;
 	display: flex;
 	height: 70px;
+}
+
+.nav-menu-wrapper{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(255,255,255,0.8);
 }
 
 .lista-menu-principal{
@@ -51,7 +57,8 @@ li a:hover{
 
 li{
 	list-style-type: none;
-	margin: 0 10px;
+	margin: 5px 40px;
+    font-weight: bold;
 }
 
 .lista-sub-menu{
@@ -72,14 +79,22 @@ li{
 	background-color: rgb(255,255,255);
 }
 
+.lista-sub-menu a:hover{
+    color: black!important;
+}
+
 .minha-conta{
+    margin-top: 5px;
 	background-color: #D4C5CB;
-	border: 3px solid black;
+	border: 2px solid black;
 	border-radius: 20px;
 	padding: 3px 10px;
 	font-size: 18px;
 	position: relative;
 	height: 35px;
+    font-weight: bold;
+    background: radial-gradient(100% 1081.68% at 0% 27.78%, #DCD6D6 5.21%, #D9C9D3 100%);
+    filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.3));
 }
 
 /********************************************************************
@@ -136,7 +151,7 @@ a:any-link {
 }
 
 .x1 {
-    background-image: url(imagens/fundo.png);
+    background-image: url(../images/fundo.png);
     background-size: cover;
     background-position: center;
 }
@@ -450,7 +465,8 @@ IMG.displayed {
     border-radius: 15px;
     margin-top: 50px;
     align-items: center;
-    align-content: center;
+    align-content: center;    
+    position: relative;
 }
 
 #imgLupa{
@@ -476,6 +492,8 @@ IMG.displayed {
     background-color: white;
     width: 100px;
     height: 100%;
+    position: absolute;
+    right: 0;
 }
 
 /*------ FIM CSS PESQUISA ------*/

@@ -18,6 +18,7 @@
 		<script src="../../js/main.js"></script>	
 		<script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
 		<script src="https://rawgit.com/RobinHerbots/Inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 		<link href="../../css/fontawesome.min.css" rel="stylesheet">
 		<link href="../../css/all.css" rel="stylesheet">
 		<link href="../../css/style-pa.css" rel="stylesheet">
