@@ -305,7 +305,16 @@ form{
 	border-radius: 20px;
 }
 
-.foto-perfil-box button{
+input[type='file'] {
+  display: none
+}
+
+#botao-submit-foto{
+	display: none;
+	margin: 0 auto;
+}
+
+.foto-perfil-box label{
 	border-radius: 30px;
 	padding: 10px 25px;
 	font-weight: bold;
@@ -398,7 +407,9 @@ td{
 	background-color: #C4C4C4;
 }
 
-.perfil-privado > button{
+
+
+.perfil-privado > a{
 	border-radius: 10px;
 	border: 1px solid black;
 	font-size: 20px;
