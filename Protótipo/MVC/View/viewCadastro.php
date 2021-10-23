@@ -1,7 +1,7 @@
 <?php 
 	include_once("viewHead.php");
-	//include_once("../Model/modelBancoDeDados.php");	
-	//include_once("../Model/modelCadastroUsuario.php"); 
+	include_once("../Model/modelBancoDeDados.php");	
+	include_once("../Model/modelCadastroUsuario.php"); 
 ?>
 
 <section class="tela-cadastro">

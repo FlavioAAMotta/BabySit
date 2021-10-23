@@ -1,6 +1,6 @@
 <?php 
     include_once("viewHeadPrincipal.php");
-    //include_once("../Model/modelBancoDeDados.php");   
+    include_once("../Model/modelBancoDeDados.php");   
 ?>
 
     <h1 class="titulo">Como funciona para as babás?</h1> <br>

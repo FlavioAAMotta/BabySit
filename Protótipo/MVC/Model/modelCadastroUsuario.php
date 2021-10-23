@@ -13,10 +13,15 @@
 		$sexoUsuario = $_POST['sexo-usuario'];
 		$emailUsuario = $_POST['email-usuario'];
 		$senhaUsuario = $_POST['senha-usuario'];
+		$dataRegistroUsuario = date('d-m-Y'); //testar pra ver se da certo!!!
 		
-		$addUsuario = $pdo->prepare("INSERT INTO usuarios_teste (nome_usuario, sobrenome_usuario, cpf_usuario, nasc_usuario, endereco_usuario, complemento_usuario, cep_usuario, telefone_usuario, sexo_usuario, email_usuario, senha_usuario) VALUES ('$nomeUsuario', '$sobrenomeUsuario', '$cpfUsuario', '$dataUsuario', '$enderecoUsuario', '$complementoUsuario', '$cepUsuario', '$telefoneUsuario', '$sexoUsuario', '$emailUsuario', '$senhaUsuario')");
+		$addUsuario = $pdo->prepare("INSERT INTO usuarios_teste (nome_usuario, sobrenome_usuario, cpf_usuario, nasc_usuario, endereco_usuario, complemento_usuario, cep_usuario, telefone_usuario, sexo_usuario, email_usuario, senha_usuario, data_registro_usuario) VALUES ('$nomeUsuario', '$sobrenomeUsuario', '$cpfUsuario', '$dataUsuario', '$enderecoUsuario', '$complementoUsuario', '$cepUsuario', '$telefoneUsuario', '$sexoUsuario', '$emailUsuario', '$senhaUsuario', '$dataRegistroUsuario')");
+
+		$addPerfilBaba = $pdo->prepare("INSERT INTO perfil_baba (experiencia_baba) VALUES ('$dataRegistroUsuario')"); 
+		//$addPerfilFamilia = $$pdo->prepare("INSERT INTO usuarios_teste (nome_usuario 	
 
 		$addUsuario->execute();
+		$addPerfilBaba->execute();
 
 		echo "<script>document.location='../View/viewLogin.php'</script>";
 	}

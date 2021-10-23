@@ -1,6 +1,6 @@
 <?php 
 	
-	if(isset($_POST['login'])){	
+	/*if(isset($_POST['login'])){	
 		$login = $_POST['login'];
 		$senha = $_POST['senha'];
 
@@ -10,22 +10,20 @@
 		else{
 			echo "DADOS INCORRETOS!";
 		}		
-	}
+	}*/
 
-
-	
-
-	/*
 	$contErro = 0;
 	for($i=0;$i<count($totalUsuarios);$i++){
 		if(isset($_POST['login']) and isset($_POST['senha'])){
 			if($totalUsuarios[$i]['email_usuario'] == $_POST['login'] and $totalUsuarios[$i]['senha_usuario'] == $_POST['senha']){
 				
 				$usuarioLogado = $_POST['login'];
-				$nomeUsuario = $totalUsuarios[$i]['nome_usuario'];				
+				$nomeUsuario = $totalUsuarios[$i]['nome_usuario'];
+				$idUsuario = $totalUsuarios[$i]['id_usuario'];	
 				
 				$_SESSION['login'] = $usuarioLogado;
 				$_SESSION['nome'] = $nomeUsuario;
+				$_SESSION['id'] = $idUsuario;
 				
 				echo "<script>document.location='../View/viewSelecionarPerfil.php'</script>";		
 			}
@@ -36,5 +34,5 @@
 				}
 			}
 		}
-	}*/
+	}
 ?>

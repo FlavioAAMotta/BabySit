@@ -420,6 +420,63 @@ td{
 }
 
 /*-------------------------------------------------------
+					EDITAR INFO BABA
+-------------------------------------------------------*/
+
+.input-info-wrapper{
+	display: flex;
+	justify-content: space-around;
+}
+
+.input-info label{
+	margin-right: 20px;
+}
+
+.input-info input[type=checkbox]{
+	margin-top: 10px;
+}
+
+.input-info input{
+	background-color: #ECECEC;
+	padding: 10px 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: none;
+}
+
+.input-info textarea{
+	background-color: #ECECEC;
+	padding: 10px 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	border: none;
+	resize: none;
+}
+
+.input-info input:focus{
+	border: 1px solid black;
+}
+
+.botao-envia-formulario{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.botao-envia-formulario button{
+	cursor: pointer;
+	font-weight: bold;
+	color: white;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	width: 200px;
+	margin: 0 auto;
+	background-color: #2D76EA;
+}
+
+
+/*-------------------------------------------------------
 					MEDIA QUERIES
 -------------------------------------------------------*/
 
