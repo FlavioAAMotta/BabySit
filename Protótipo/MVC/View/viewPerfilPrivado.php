@@ -31,8 +31,10 @@
 					<br><br>
 				</div>
 
+				<?php include_once('../Controller/controllerFormataData.php'); ?>
+
 				<div class="data-perfil-box">
-					<p>Data de nascimento: DD/MM/AAAA</p>
+					<p>Data de nascimento: <?php echo $dataFormatada?></p>
 					<p>Data de registro: DD/MM/AAAA</p>
 				</div>
 
@@ -148,7 +150,7 @@
 
 		</div><!-- FIM DO INFO-PERFIL-WRAPPER -->
 
-		<div class="info-perfil-disponibilidade-wrapper">
+		<!--<div class="info-perfil-disponibilidade-wrapper">
 			<h4>Disponibilidade:</h4>
 			<br>
 			<div class="info-perfil-disponibilidade-card">
@@ -198,20 +200,31 @@
 					</tr>
 				</table>
 			</div>
-		</div>
+		</div>-->
 
 		<a href="viewEditarInfoBaba.php">Editar informações</a>
 	<?php }else{?>
 		<div class="info-perfil-wrapper">
 			<div class="info-perfil-card">
 				<div class="foto-perfil-box">
+					<?php if($totalUsuarios[0]['foto_usuario'] != null){ ?>
+					<img src="<?php echo $totalUsuarios[0]['foto_usuario']?>"><br>
+					<?php }else{?>
 					<img src="../../images/profile.png"><br>
-					<button>Trocar foto</button>
+					<?php }?>
+					<form method="POST" action="../Model/modelFotoUsuario.php" enctype="multipart/form-data">
+						<label id="botao-trocar-foto" for='fileToUpload'>Trocar foto</label>
+						<input type="file" name="fileToUpload" id="fileToUpload">
+						<br><br>
+						<input id="botao-submit-foto" type="submit" value="Enviar">
+					</form>
 					<br><br>
 				</div>
 
+				<?php include_once('../Controller/controllerFormataData.php'); ?>
+
 				<div class="data-perfil-box">
-					<p>Data de nascimento: DD/MM/AAAA</p>
+					<p>Data de nascimento: <?php echo $dataFormatada?></p>
 					<p>Data de registro: DD/MM/AAAA</p>
 				</div>
 
@@ -262,7 +275,7 @@
 
 		</div><!-- FIM DO INFO-PERFIL-WRAPPER -->
 
-		<div class="info-perfil-disponibilidade-wrapper">
+		<!--<div class="info-perfil-disponibilidade-wrapper">
 			<h4>Disponibilidade:</h4>
 			<br>
 			<div class="info-perfil-disponibilidade-card">
@@ -312,7 +325,7 @@
 					</tr>
 				</table>
 			</div>
-		</div>
+		</div>-->
 
 		<a href="viewEditarInfoFamilia.php">Editar informações</a>
 	<?php }?>

@@ -486,6 +486,10 @@ td{
 	background-color: #2D76EA;
 }
 
+.descricao-familia{
+	display: none;
+}
+
 
 /*-------------------------------------------------------
 					MEDIA QUERIES
