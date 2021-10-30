@@ -9,38 +9,38 @@
 
 <section class="form-info-baba container-principal">
 	
-	<form class="input-info" action="../Model/modelEditarPerfilBaba.php" method="POST">
+	<form class="input-info" action="../Model/modelEditarPerfilFamilia.php" method="POST">
 		<div class="input-info-wrapper">
 			<div>
 				<h2>Seus filhos podem ser: </h2>
 
-				<input type="checkbox" name="tarefa-simples" value="1"
-				<?php if (isset($totalDadosBaba[0]['pers_agitado_familia']) && $totalDadosBaba[0]['pers_agitado_familia'] == '1'){ ?>checked='checked'<?php }?>
+				<input type="checkbox" name="agitados" value="1"
+				<?php if (isset($totalDadosFamilia[0]['pers_agitado_familia']) && $totalDadosFamilia[0]['pers_agitado_familia'] == '1'){ ?>checked='checked'<?php }?>
 				>
-				<label>Tarefas simples</label>		
+				<label>Agitados</label>		
 				<br>
-				<input type="checkbox" name="fazer-compras" value="1"
-				<?php if (isset($totalDadosBaba[0]['pers_tranquilo_compras_familia']) && $totalDadosBaba[0]['pers_tranquilo_familia'] == '1'){ ?>checked='checked'<?php }?>
+				<input type="checkbox" name="tranquilos" value="1"
+				<?php if (isset($totalDadosFamilia[0]['pers_tranquilo_compras_familia']) && $totalDadosFamilia[0]['pers_tranquilo_familia'] == '1'){ ?>checked='checked'<?php }?>
 				>
-				<label>Fazer compras</label>
+				<label>Tranquilos</label>
 				<br>
-				<input type="checkbox" name="cozinhar" value="1"
-				<?php if (isset($totalDadosBaba[0]['pers_brincar_familia']) && $totalDadosBaba[0]['pers_brincar_familia'] == '1'){ ?>checked='checked'<?php }?>
+				<input type="checkbox" name="brincar" value="1"
+				<?php if (isset($totalDadosFamilia[0]['pers_brincar_familia']) && $totalDadosFamilia[0]['pers_brincar_familia'] == '1'){ ?>checked='checked'<?php }?>
 				>
-				<label>Cozinhar</label>
+				<label>Gostam de brincar</label>
 				<br>
-				<input type="checkbox" name="licao-casa" value="1"
-				<?php if (isset($totalDadosBaba[0]['pers_desenhos_familia']) && $totalDadosBaba[0]['pers_desenhos_familia'] == '1'){ ?>checked='checked'<?php }?>
+				<input type="checkbox" name="desenhos" value="1"
+				<?php if (isset($totalDadosFamilia[0]['pers_desenhos_familia']) && $totalDadosFamilia[0]['pers_desenhos_familia'] == '1'){ ?>checked='checked'<?php }?>
 				>
-				<label>Lição de casa</label>
+				<label>Gostam de assistir desenhos</label>
 				
 			</div>		
 			
 			<div>
 				<h2>Descrição:</h2>
-				<textarea name="formacao"><?php 
-						if(isset($totalDadosBaba[0]['descricao_familia'])){ 
-							echo $totalDadosBaba[0]['descricao_familia'];
+				<textarea name="desc-familia"><?php 
+						if(isset($totalDadosFamilia[0]['descricao_familia'])){ 
+							echo $totalDadosFamilia[0]['descricao_familia'];
 						}?></textarea>
 				<br><br>
 
@@ -49,7 +49,7 @@
 				<input onchange="mostrarDesc('nao')" style="margin-left: 20px" type="radio" name="cuidados-especiais" value="nao">Não
 				<br><br>
 				<div class="descricao-familia">
-					<textarea name="descricao"><?php 
+					<textarea name="cuidados-familia"><?php 
 							if(isset($totalDadosFamilia[0]['cuidados_familia'])){ 
 								echo $totalDadosFamilia[0]['cuidados_familia'];
 							}?></textarea>

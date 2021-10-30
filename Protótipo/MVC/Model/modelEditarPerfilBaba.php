@@ -2,7 +2,19 @@
 	session_start();
 	include_once("modelBancoDeDados.php");
 
-	$idUsuario = $_SESSION['id'];	
+	$idUsuario = $_SESSION['id'];
+
+	if(isset($_POST['exp-meses'])){
+		$expMeses = $_POST['exp-meses'];
+	}else{
+		$expMeses = null;
+	}
+
+	if(isset($_POST['exp-anos'])){
+		$expAnos = $_POST['exp-anos'];
+	}else{
+		$expAnos = null;
+	}
 
 	if(isset($_POST['bebe'])){
 		$expBebe = $_POST['bebe'];
@@ -70,7 +82,7 @@
 		$valorHora = 0;
 	}
 
-	$editarPerfilBaba = $pdo->prepare("UPDATE perfil_baba SET exp_bebe_baba = '$expBebe', exp_crianca_baba = '$expCrianca', exp_jovem_baba = '$expJovem', linguas_baba = '$linguas', ajuda_tarefa_baba = '$tarefaSimples', ajuda_compras_baba = '$fazerCompras', ajuda_cozinhar_baba = '$cozinhar', ajuda_licao_baba = '$licaoCasa', formacao_baba = '$formacao', descricao_baba = '$descricao', valor_hora_baba = '$valorHora'
+	$editarPerfilBaba = $pdo->prepare("UPDATE perfil_baba SET exp_bebe_baba = '$expBebe', exp_crianca_baba = '$expCrianca', exp_jovem_baba = '$expJovem', exp_meses_baba = $expMeses, exp_anos_baba = $expAnos,linguas_baba = '$linguas', ajuda_tarefa_baba = '$tarefaSimples', ajuda_compras_baba = '$fazerCompras', ajuda_cozinhar_baba = '$cozinhar', ajuda_licao_baba = '$licaoCasa', formacao_baba = '$formacao', descricao_baba = '$descricao', valor_hora_baba = '$valorHora'
 	 WHERE id_usuario = '$idUsuario'");
 
 	$editarPerfilBaba->execute();

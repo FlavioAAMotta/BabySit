@@ -6,6 +6,7 @@
 	include_once("../Model/modelBancoDeDados.php");
 	include_once("../Model/modelVerificaUsuarios.php");
 	include_once("../Model/modelVerificaDadosBaba.php");	
+	include_once("../Model/modelVerificaDadosFamilia.php");
 ?>
 
 <section class="perfil-privado container-principal">
@@ -35,7 +36,10 @@
 
 				<div class="data-perfil-box">
 					<p>Data de nascimento: <?php echo $dataFormatada?></p>
-					<p>Data de registro: DD/MM/AAAA</p>
+
+					<?php include_once('../Controller/controllerDataRegistroUsuario.php')?>
+
+					<p>Data de registro: <?php echo $dataFormatada?></p>
 				</div>
 
 				<div class="avaliacao-perfil-box">
@@ -104,7 +108,12 @@
 				</div>
 
 				<p>Tempo de experiência:</p>
-				<p><?php echo $totalDadosBaba[0]['experiencia_baba'] ?></p>
+
+				<?php 
+					$expMesesAnos = "Meses: ".$totalDadosBaba[0]['exp_meses_baba']. "<br>Anos: " . $totalDadosBaba[0]['exp_anos_baba']; 
+				?>
+
+				<p><?php echo  $expMesesAnos ?></p>
 
 				<p>Linguas:</p>
 				<p><?php echo $totalDadosBaba[0]['linguas_baba'] ?></p>
@@ -113,24 +122,24 @@
 					<h4>Pode ajudar com:</h4>
 					<br>
 					<input type="checkbox" name="tarefa-simples" value="1"
-				<?php if (isset($totalDadosBaba[0]['ajuda_tarefa_baba']) && $totalDadosBaba[0]['ajuda_tarefa_baba'] == '1'){ ?>checked='checked'<?php }?>
-				>
-				<label>Tarefas simples</label>		
-				<br>
-				<input type="checkbox" name="fazer-compras" value="1"
-				<?php if (isset($totalDadosBaba[0]['ajuda_compras_baba']) && $totalDadosBaba[0]['ajuda_compras_baba'] == '1'){ ?>checked='checked'<?php }?>
-				>
-				<label>Fazer compras</label>
-				<br>
-				<input type="checkbox" name="cozinhar" value="1"
-				<?php if (isset($totalDadosBaba[0]['ajuda_cozinhar_baba']) && $totalDadosBaba[0]['ajuda_cozinhar_baba'] == '1'){ ?>checked='checked'<?php }?>
-				>
-				<label>Cozinhar</label>
-				<br>
-				<input type="checkbox" name="licao-casa" value="1"
-				<?php if (isset($totalDadosBaba[0]['ajuda_licao_baba']) && $totalDadosBaba[0]['ajuda_licao_baba'] == '1'){ ?>checked='checked'<?php }?>
-				>
-				<label>Lição de casa</label>
+					<?php if (isset($totalDadosBaba[0]['ajuda_tarefa_baba']) && $totalDadosBaba[0]['ajuda_tarefa_baba'] == '1'){ ?>checked='checked'<?php }?>
+					>
+					<label>Tarefas simples</label>		
+					<br>
+					<input type="checkbox" name="fazer-compras" value="1"
+					<?php if (isset($totalDadosBaba[0]['ajuda_compras_baba']) && $totalDadosBaba[0]['ajuda_compras_baba'] == '1'){ ?>checked='checked'<?php }?>
+					>
+					<label>Fazer compras</label>
+					<br>
+					<input type="checkbox" name="cozinhar" value="1"
+					<?php if (isset($totalDadosBaba[0]['ajuda_cozinhar_baba']) && $totalDadosBaba[0]['ajuda_cozinhar_baba'] == '1'){ ?>checked='checked'<?php }?>
+					>
+					<label>Cozinhar</label>
+					<br>
+					<input type="checkbox" name="licao-casa" value="1"
+					<?php if (isset($totalDadosBaba[0]['ajuda_licao_baba']) && $totalDadosBaba[0]['ajuda_licao_baba'] == '1'){ ?>checked='checked'<?php }?>
+					>
+					<label>Lição de casa</label>
 				</div>
 			</div><!-- FIM DO EXTRA-INFO-PERFIL-BOX -->
 
@@ -225,7 +234,10 @@
 
 				<div class="data-perfil-box">
 					<p>Data de nascimento: <?php echo $dataFormatada?></p>
-					<p>Data de registro: DD/MM/AAAA</p>
+					
+					<?php include_once('../Controller/controllerDataRegistroUsuario.php')?>
+
+					<p>Data de registro: <?php echo $dataFormatada?></p>
 				</div>
 
 				<div class="avaliacao-perfil-box">
@@ -241,16 +253,24 @@
 				<div class="info-tarefas-perfil-box">
 					<h4>Seus filhos podem ser:</h4>
 					<br>
-					<input type="checkbox" checked onclick="return false;"/>
+					<input type="checkbox" onclick="return false;"
+					<?php if (isset($totalDadosFamilia[0]['pers_agitado_familia']) && $totalDadosFamilia[0]['pers_agitado_familia'] == '1'){ ?>checked='checked'<?php }?>
+					>
 					<label>Agitados</label>
 					<br>
-					<input type="checkbox" onclick="return false;"/>
+					<input type="checkbox" onclick="return false;"
+					<?php if (isset($totalDadosFamilia[0]['pers_tranquilo_familia']) && $totalDadosFamilia[0]['pers_tranquilo_familia'] == '1'){ ?>checked='checked'<?php }?>
+					>
 					<label>Tranquilos</label>
 					<br>
-					<input type="checkbox" checked onclick="return false;"/>
+					<input type="checkbox" onclick="return false;"
+					<?php if (isset($totalDadosFamilia[0]['pers_brincar_familia']) && $totalDadosFamilia[0]['pers_brincar_familia'] == '1'){ ?>checked='checked'<?php }?>
+					>
 					<label>Gostam de brincar</label>
 					<br>
-					<input type="checkbox" checked onclick="return false;"/>
+					<input type="checkbox" onclick="return false;"
+					<?php if (isset($totalDadosFamilia[0]['pers_desenhos_familia']) && $totalDadosFamilia[0]['pers_desenhos_familia'] == '1'){ ?>checked='checked'<?php }?>
+					>
 					<label>Gostam de assistir desenhos</label>
 				</div>
 			</div><!-- FIM DO EXTRA-INFO-PERFIL-BOX -->
@@ -258,17 +278,10 @@
 			<div class="extra-info-perfil-box">
 				<div class="exp-info-formacao">
 					<p>Descrição:</p>
-					<textarea class="descricao-perfil-privado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum, justo vitae congue finibus.</textarea>
+					<textarea class="descricao-perfil-privado"><?php if (isset($totalDadosFamilia[0]['descricao_familia'])){echo $totalDadosFamilia[0]['descricao_familia'];}?></textarea>
 					<br>
-					<p>Cuidados especiais?</p>
-					<div>					
-						<input type="checkbox" checked onclick="return false">
-						<label>Sim</label>
-
-						<input type="checkbox" onclick="return false" style="margin-left: 20px">
-						<label>Não</label>
-					</div>
-					<textarea class="descricao-perfil-privado">Digite os cuidados que deverão ser seguidos...</textarea>
+					<p>Cuidados especiais:</p>
+					<textarea class="descricao-perfil-privado"><?php if (isset($totalDadosFamilia[0]['cuidados_familia'])){echo $totalDadosFamilia[0]['cuidados_familia'];}?></textarea>
 				</div>
 
 			</div><!-- FIM DO EXTRA-INFO-PERFIL-BOX -->

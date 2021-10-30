@@ -31,6 +31,21 @@
 
 				<br><br>
 
+				<input style="width: 100px" placeholder="Meses" type="number" name="exp-meses"
+				<?php if(isset($totalDadosBaba[0]['exp_meses_baba'])){?>
+					value="<?php echo $totalDadosBaba[0]['exp_meses_baba']?>"
+				<?php }?>
+				>
+
+
+				<input style="width: 100px" placeholder="Anos" type="number" name="exp-anos"
+				<?php if(isset($totalDadosBaba[0]['exp_anos_baba'])){?>
+					value="<?php echo $totalDadosBaba[0]['exp_anos_baba']?>"
+				<?php }?>
+				>
+
+				<br><br>
+
 				<h2>Linguas:</h2>
 				<textarea name="linguas"><?php 
 						if(isset($totalDadosBaba[0]['linguas_baba'])){ 
