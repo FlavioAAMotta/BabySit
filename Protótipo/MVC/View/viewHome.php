@@ -117,7 +117,7 @@
             <form>
                 <input type="radio" id="pais" name="fav_language" value="PAIS">
                 <label for="pais">Pais</label>
-                <input type="radio" id="babas" name="fav_language" value="BABAS">
+                <input style="margin-left: 10px" type="radio" id="babas" name="fav_language" value="BABAS">
                 <label for="babas">Babás</label><br>
                 <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
             </form>

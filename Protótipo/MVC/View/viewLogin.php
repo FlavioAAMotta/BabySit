@@ -27,7 +27,6 @@
 		
 		<div style="text-align: center">
 			<?php 
-				//include_once("../Model/modelLogin.php");
 				include_once("../Controller/controllerLogin.php");	
 			?>
 		</div>

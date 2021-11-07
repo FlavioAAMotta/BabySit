@@ -30,13 +30,35 @@
 			
 			<div class="nav-bar container-principal">
 				<a href="viewHome.php"><img src="../../images/logo.png"></a>
-				<div class="minha-conta">
-					<a href="viewLogin.php">Minha conta</a>
+				<div id="minha-conta">
+					<div class="minha-conta">
+						<a  href="viewLogin.php">Minha conta</a>					
+					</div>
+
+					<div class="menu-minha-conta">
+						<ul>
+							<li>Cadastrar serviço</li>
+							<li>Editar informações</li>
+							<li>Sair</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			
 		</header><!-- FIM DO HEADER -->
 
 		<script>
+
+			$('#minha-conta').mouseover(function(){
+				$('.menu-minha-conta').css('display', 'block');	
+			});
+
+			$('.menu-minha-conta').mouseover(function(){
+				$('.menu-minha-conta').css('display', 'block');	
+			});
+
+			$('#minha-conta').mouseleave(function(){
+				$('.menu-minha-conta').css('display', 'none');	
+			})
 			
 		</script>

@@ -272,6 +272,20 @@
 					<?php if (isset($totalDadosFamilia[0]['pers_desenhos_familia']) && $totalDadosFamilia[0]['pers_desenhos_familia'] == '1'){ ?>checked='checked'<?php }?>
 					>
 					<label>Gostam de assistir desenhos</label>
+					
+					<br><br>
+
+					<div>
+						<h4>Filhos:</h4>
+						<textarea class="descricao-perfil-privado"><?php if (isset($totalDadosFamilia[0]['filhos_familia'])){echo $totalDadosFamilia[0]['filhos_familia'];}?></textarea>
+					</div>
+
+					<br>
+
+					<div>
+						<h4>Horário do serviço:</h4>
+						<textarea class="descricao-perfil-privado"><?php if (isset($totalDadosFamilia[0]['horario_familia'])){echo $totalDadosFamilia[0]['horario_familia'];}?></textarea>
+					</div>
 				</div>
 			</div><!-- FIM DO EXTRA-INFO-PERFIL-BOX -->
 
@@ -282,7 +296,27 @@
 					<br>
 					<p>Cuidados especiais:</p>
 					<textarea class="descricao-perfil-privado"><?php if (isset($totalDadosFamilia[0]['cuidados_familia'])){echo $totalDadosFamilia[0]['cuidados_familia'];}?></textarea>
+					<br><br>
+					<h4>Serviço ativo?</h4>
+					<?php if($totalDadosFamilia[0]['servico_ativo_familia'] == 1){?>
+					<p>Sim</p>
+					<?php }else{?>
+					<p>Não</p>						
+					<?php }?>
+
+					<br>
+
+					<?php if($totalDadosFamilia[0]['servico_andamento_familia'] == 0){?>
+					<h4 style="text-align: center">Serviço em andamento</h4>
+					<br>
+					<div class="botao-envia-formulario">
+						<button>Encerrar serviço</button>
+					</div>
+
+					<?php }?>
 				</div>
+
+
 
 			</div><!-- FIM DO EXTRA-INFO-PERFIL-BOX -->
 

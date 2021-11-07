@@ -33,15 +33,15 @@
 				<?php if (isset($totalDadosFamilia[0]['pers_desenhos_familia']) && $totalDadosFamilia[0]['pers_desenhos_familia'] == '1'){ ?>checked='checked'<?php }?>
 				>
 				<label>Gostam de assistir desenhos</label>
-				
-			</div>		
-			
-			<div>
-				<h2>Descrição:</h2>
-				<textarea name="desc-familia"><?php 
-						if(isset($totalDadosFamilia[0]['descricao_familia'])){ 
-							echo $totalDadosFamilia[0]['descricao_familia'];
-						}?></textarea>
+
+				<br><br>
+
+				<h2>Filhos:</h2>
+				<textarea name="filhos-familia"><?php 
+						if(isset($totalDadosFamilia[0]['filhos_familia'])){ 
+							echo $totalDadosFamilia[0]['filhos_familia'];
+						}?></textarea>	
+
 				<br><br>
 
 				<h2>Cuidados especiais?</h2>
@@ -53,9 +53,30 @@
 							if(isset($totalDadosFamilia[0]['cuidados_familia'])){ 
 								echo $totalDadosFamilia[0]['cuidados_familia'];
 							}?></textarea>
-				</div>
+				</div>		
+			</div>		
+			
+			<div>			
+
+				<h2>Horário do serviço:</h2>
+				<textarea name="horario-familia"><?php 
+						if(isset($totalDadosFamilia[0]['horario_familia'])){ 
+							echo $totalDadosFamilia[0]['horario_familia'];
+						}?></textarea>	
 
 				<br><br>
+
+				<h2>Descrição:</h2>
+				<textarea name="desc-familia"><?php 
+						if(isset($totalDadosFamilia[0]['descricao_familia'])){ 
+							echo $totalDadosFamilia[0]['descricao_familia'];
+						}?></textarea>
+				<br><br>
+
+				<h2>Serviço ativo?</h2>
+				<input type="radio" name="servico-ativo" value="1">Sim
+				<input style="margin-left: 20px" type="radio" name="servico-ativo" value="0">Não
+				
 			</div>
 		</div>
 		<br><br>

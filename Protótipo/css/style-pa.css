@@ -112,9 +112,34 @@ input:focus{
 	background-color: #2D76EA;
 }
 
+ul{
+	list-style-type: none;
+}
+
 form{
 	margin-top: 20px;
 }
+
+.menu-minha-conta{
+	text-align: center;
+	position: absolute;
+	background-color: rgba(255,255,255,0.5);
+	
+	margin-top: 5px;
+	display: none;
+}
+
+.menu-minha-conta li{
+	font-weight: bold;
+	cursor: pointer;
+	padding: 10px;
+}
+
+
+.menu-minha-conta li:hover{
+	background-color: white;
+}
+
 
 /*-------------------------------------------------------
 					INICIO TELA-CADASTRO

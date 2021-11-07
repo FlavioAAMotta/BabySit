@@ -28,6 +28,18 @@
 		$desenhos = null;
 	}
 
+	if(isset($_POST['filhos-familia'])){
+		$filhosFamilia = $_POST['filhos-familia'];
+	}else{
+		$filhosFamilia = ' ';
+	}
+
+	if(isset($_POST['horario-familia'])){
+		$horarioFamilia = $_POST['horario-familia'];
+	}else{
+		$horarioFamilia = ' ';
+	}
+
 	if(isset($_POST['desc-familia'])){
 		$descFamilia = $_POST['desc-familia'];
 	}else{
@@ -40,8 +52,14 @@
 		$cuidadosFamilia = ' ';
 	}
 
+	if(isset($_POST['servico-ativo'])){
+		$servicoAtivo = $_POST['servico-ativo'];
+	}else{
+		$servicoAtivo = ' ';
+	}
 
-	$editarPerfilFamilia = $pdo->prepare("UPDATE perfil_familia SET pers_agitado_familia = '$agitados', pers_tranquilo_familia = '$tranquilos', pers_brincar_familia = '$brincar', pers_desenhos_familia = '$desenhos', descricao_familia = '$descFamilia', cuidados_familia = '$cuidadosFamilia'
+
+	$editarPerfilFamilia = $pdo->prepare("UPDATE perfil_familia SET pers_agitado_familia = '$agitados', pers_tranquilo_familia = '$tranquilos', pers_brincar_familia = '$brincar', pers_desenhos_familia = '$desenhos', filhos_familia = '$filhosFamilia', horario_familia = '$horarioFamilia', descricao_familia = '$descFamilia', cuidados_familia = '$cuidadosFamilia', servico_ativo_familia = '$servicoAtivo'
 	 WHERE id_usuario = '$idUsuario'");
 
 	$editarPerfilFamilia->execute();

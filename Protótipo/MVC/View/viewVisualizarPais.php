@@ -1,7 +1,7 @@
 <?php
     include_once("viewHeadPrincipal.php");
-    #include_once("../Model/modelBancoDeDados.php");
-    #include_once("../Model/modelCadastroUsuario.php");
+    include_once("../Model/modelBancoDeDados.php");
+    include_once("../Model/modelServicos.php");
 ?>
     
     <!--div que contem a barra de pesquisa-->
@@ -16,44 +16,32 @@
         </form>
     </div>
 
-    <!--div que contem o texto para mudança de resultados da pesquisa-->
-    <div class="d-flex flex-wrap align-content-center" id="divTextoTroca">
-
-        <div class="p-2 flex-wrap align-content-center" id="textoTroca">
-
-            <p class="p-2" >
-                Sou <spam id=""> pai </spam> e desejo procurar por uma <spam id="">baba </spam> 
-            </p>
-
-        </div>
-
-        <div class="p-2" id="quadradoTroca">
-        
-            <a class="btn" style="background-color: white;" href="viewVisualizarBabas.php">
-                <img src="../../images/arrow.png" style="width: 18px; height: 18px;">
-            </a>
-
-        </div>
-
-    </div>
-
     <!--área de resultados que contem os Cards-->
     <div style="padding-top: 20px;" id="divCards">
 
+        <?php 
+            for($i = 0; $i < count($totalFamilia); $i++){
+                if(($totalFamilia[$i]['servico_ativo_familia'] == '1') && ($totalFamilia[$i]['servico_andamento_familia'] != '1')){
+                    $idUsuario = $totalFamilia[$i]['id_usuario'];
+        ?>
+
         <!--CARD 1-->
-        <a href="viewPerfilPublicoPais.php">
+        <a href="viewPerfilPublicoPais.php?idServico=<?php echo $idUsuario?>">
             <div class="Card" style="">
 
                 <div class="foto">
+                    <?php 
+                        include("../Model/modelVerificaUsuarios.php");
+                    ?>
                     <img src="../../images/gps.png" alt="" height="18px" style="margin: 3px; position: absolute;">
                     <p style="margin-left: 22px; position: absolute;">Cidade</p>                    
-                    <img src="../../images/Foto 1.png" alt="" width="125px">
+                    <img src="<?php echo $totalUsuarios[0]['foto_usuario']?>" alt="" width="125px">
                 </div>
 
                 <div class="dados">
-                <div> 
+                    <div> 
                         <div class="estrelasPesquisa">  
-                            <h4>Nome, idade</h4>
+                            <h4><?php echo $totalUsuarios[0]['nome_usuario']?></h4>
                             <div>
                                 <div class="styleEstrelas">
                                     <span class="fa fa-star checked"></span>
@@ -66,8 +54,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h6><b>Experiência:</b> X ano </h6>
-                        <h6><b>Descrição:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit...</h6>
+                        <h6><b>Descrição:</b> <?php echo $totalFamilia[0]['descricao_familia']?></h6>
                         <div class="disponibilidade">
                             <h6><b>Disponibilidade:</b> </h6>
                             <div>
@@ -85,7 +72,10 @@
 
             </div>
         </a>
+        <?php }}?>
+        
         <!--CARD 2-->
+        <!--
         <a href="viewPerfilPublicoPais.php">
             <div class="Card" style="">
 
@@ -131,7 +121,7 @@
             </div>
         </a>
 
-        <!--CARD 3-->
+       
         <a href="viewPerfilPublicoPais.php">
             <div class="Card" style="">
 
@@ -177,7 +167,7 @@
             </div> 
         </a>    
 
-        <!--CARD 4-->
+        
         <a href="viewPerfilPublicoPais.php">
             <div class="Card" style="">
 
@@ -222,7 +212,7 @@
 
             </div>    
         </a>   
-        <!--CARD 3-->
+        
         <a href="viewPerfilPublicoPais.php">
             <div class="Card" style="">
 
@@ -268,7 +258,6 @@
             </div> 
         </a>    
 
-        <!--CARD 4-->
         <a href="viewPerfilPublicoPais.php">
             <div class="Card" style="">
 
@@ -312,7 +301,7 @@
                 </div>
 
             </div>
-        </a>
+        </a>-->
         
     </div>
     

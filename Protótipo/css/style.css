@@ -318,7 +318,12 @@ IMG.displayed {
     width: 500px;
 }
 
+.z1 input{
+    border: none!important;
+}
+
 #cidade {
+    border: none;
     background-color: #ECE6E6;
 }
 
@@ -535,6 +540,14 @@ IMG.displayed {
 
 .dados h4{
     font-weight: bold;
+    font-size: 22px;
+}
+
+.dados h6{
+    max-width: 55ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #divCards{
@@ -554,7 +567,6 @@ IMG.displayed {
 .dados{
     background-image: linear-gradient(140deg, rgba(255, 255, 255, 0.5), rgba(3, 17, 30, 0.2));
     width: 350px;
-    height: 165px;
     padding: 10px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -591,7 +603,53 @@ IMG.displayed {
 /*------- FIM CSS CARDS --------*/
 
 
+/********************************************************************
+                        PERIL PUBLICO PAIS
+********************************************************************/
 
+
+.justificado{
+    text-align: justify;
+    
+}
+
+
+.margem{
+    margin: 5px 5px 5px 5px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.perfil-publico{
+    margin: 20px 20px 20px 20px;
+
+}
+
+.info-perfil-servico-wrapper{    
+    background-color: rgba(255,255,255,0.4);
+    padding: 10px;
+}
+
+.info-perfil-servico{
+    display: flex;
+}
+
+.info-perfil-servico img{
+    margin-right: 30px;
+}
+
+.servico-textarea textarea{
+    background-color: #ECECEC;
+    padding: 10px 10px;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    resize: none;
+}
 
 
 /********************************************************************
