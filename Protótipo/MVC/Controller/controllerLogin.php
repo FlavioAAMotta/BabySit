@@ -17,6 +17,10 @@
 		if(isset($_POST['login']) and isset($_POST['senha'])){
 			if($totalUsuarios[$i]['email_usuario'] == $_POST['login'] and $totalUsuarios[$i]['senha_usuario'] == $_POST['senha']){
 				
+				$idUsuarioLogado = $totalUsuarios[$i]['id_usuario'];
+				include_once("../Model/modelStatusUsuario.php");
+				$_SESSION['id-usuario-logado'] = $idUsuarioLogado;
+
 				$usuarioLogado = $_POST['login'];
 				$nomeUsuario = $totalUsuarios[$i]['nome_usuario'];
 				$idUsuario = $totalUsuarios[$i]['id_usuario'];	

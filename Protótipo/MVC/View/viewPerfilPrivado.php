@@ -306,7 +306,7 @@
 
 					<br>
 
-					<?php if($totalDadosFamilia[0]['servico_andamento_familia'] == 0){?>
+					<?php if($totalDadosFamilia[0]['servico_andamento_familia'] == 1){?>
 					<h4 style="text-align: center">Serviço em andamento</h4>
 					<br>
 					<div class="botao-envia-formulario">

@@ -1,3 +1,16 @@
+<?php 
+	session_start();
+
+	include_once("../Model/modelBancoDeDados.php");
+
+	if(!empty($_SESSION['id-usuario-logado'])){
+		$idUsuario = $_SESSION['id-usuario-logado'];
+		include_once("../Model/modelVerificaUsuarios.php");	
+	}	
+	
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -37,7 +50,15 @@
 				</div>
 				
 				<div class="minha-conta">
-					<a href="viewLogin.php">Minha conta</a>
+					<?php 
+						if(!empty($_SESSION['id-usuario-logado'])){
+							if($totalUsuarios[0]['logado_usuario'] == 1){
+					?>
+					<a  href="viewSelecionarPerfil.php">Minha Conta</a>
+					<?php }else{?>
+					<a  href="viewLogin.php">Log in</a>					
+
+					<?php }}?>
 				</div>
 			</div>
 		</div><!-- FIM NAV-MENU-DESKTOP -->

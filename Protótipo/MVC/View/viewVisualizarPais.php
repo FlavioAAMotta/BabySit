@@ -23,6 +23,8 @@
             for($i = 0; $i < count($totalFamilia); $i++){
                 if(($totalFamilia[$i]['servico_ativo_familia'] == '1') && ($totalFamilia[$i]['servico_andamento_familia'] != '1')){
                     $idUsuario = $totalFamilia[$i]['id_usuario'];
+
+                    if($_SESSION['id-usuario-logado'] != $idUsuario){
         ?>
 
         <!--CARD 1-->
@@ -72,7 +74,7 @@
 
             </div>
         </a>
-        <?php }}?>
+        <?php }}}?>
         
         <!--CARD 2-->
         <!--

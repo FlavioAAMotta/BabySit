@@ -1,11 +1,18 @@
 <?php
-	$idUsuario = $_GET['idServico'];
-
 	include_once("viewHeadPrincipal.php");
 	include_once("../Model/modelBancoDeDados.php");
+	include_once("../Model/modelVerificarCandidatas.php");
+
+	$idUsuario = $_GET['idServico'];
+
 	include_once("../Model/modelServicos.php");
-	include_once("../Model/modelVerificaUsuarios.php");
+	include("../Model/modelVerificaUsuarios.php");
 	include_once("../Model/modelVerificaDadosFamilia.php");
+
+	$_SESSION['idFamiliaServico'] = $idUsuario;
+
+	$nomeFamilia = $totalUsuarios[0]['nome_usuario'];
+	$_SESSION['nomeFamiliaServico'] = $nomeFamilia; 
 ?>
 
 <div class= "row margem container-principal">
@@ -35,10 +42,10 @@
 				<p class="justificado"><?php echo $totalDadosFamilia[0]['descricao_familia']?><br></p>
 
 			</div>
-			<div class="col-sm-4 margem"></div>
+			<!--<div class="col-sm-4 margem"></div>
 			<div class="col margem">
 				<img src="../../images/perfilPublico/entrarContato.jpg" width="100%">
-			</div>
+			</div>-->
 		</div>
 		
 	</div>
@@ -104,6 +111,24 @@
 		</div>
 	</div>
 
+	<?php 
+		$verificaCandidaturaBaba = false;
+		for($i = 0; $i < count($totalCandidatas); $i++){
+			if($totalCandidatas[$i]['id_usuario_baba'] == $_SESSION['id-usuario-logado']){
+				$verificaCandidaturaBaba = true;
+			}
+		}
+	?>
+
+	<?php if($verificaCandidaturaBaba != true){?>
+
+	<form action="../Model/modelCandidatarServico.php" method="POST">
+		<div class="canditar-servico">
+			<button>CANDITAR AO SERVIÇO</button>
+		</div>
+	</form>
+	<?php }?>
+
 	<div class="row margem">
 		<div class="col-sm-5 margem">
 			<p><br></p>
@@ -111,7 +136,22 @@
 		</div>
 	</div>
 
-	
+	<?php if(count($totalCandidatas) != 0){?>
+
+	<div class="babas-candidatas">
+		<h2>CANDIDATAS</h2>
+		<?php 
+			for($i = 0; $i < count($totalCandidatas); $i++){
+				$idUsuario = $totalCandidatas[$i]['id_usuario_baba'];
+				include("../Model/modelVerificaUsuarios.php");
+		?>
+			<img src="<?php echo $totalUsuarios[0]['foto_usuario']?>">			
+			<h4>Nome: <?php echo $totalCandidatas[$i]['nome_usuario_baba']?></h4>
+			<br><br>
+		<?php }?>
+	</div>
+
+	<?php }?>
 </section>
 
 

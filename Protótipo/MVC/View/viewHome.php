@@ -1,5 +1,8 @@
-
-<?php include_once("viewHeadPrincipal.php");;?>
+<?php    
+    include_once("viewHeadPrincipal.php");
+    include_once("../Model/modelBancoDeDados.php"); 
+    include_once("../Model/modelUsuarios.php"); 
+?>
     <section class="x1 ">
         
         <div class="header container-principal">
@@ -13,9 +16,9 @@
                         Serviço de mensagens<br>
                     </p>
                 </div>
-                <div>
+                <!--<div>
                     <a href="viewVisualizarBabas.php"><button type="button" class="button">Ver Perfis ➞</button></a>
-                </div>
+                </div>-->
             </div>
             <div class="imgheader">
                 <img src="../../images/baba.png">
@@ -27,7 +30,29 @@
             <h1 class="bold">Avaliações</h1>
         </div>
         <div class="cardboxes  container-principal">
+
+            <?php for($i = 0; $i < count($totalUsuarios); $i++){?>
             <div class="boxdesign">
+                <img src="<?php echo $totalUsuarios[$i]['foto_usuario']?>" alt="baba2">
+                <div class="starsposition">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="justifytxt">
+                    <p class="bold"><?php echo $totalUsuarios[$i]['nome_usuario']?></p>
+                </div>
+                <div class="justifytxt">
+                    <p>Dia/Mês</p>
+                </div>
+                <div class="justifytxt">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <?php }?>
+            <!--<div class="boxdesign">
                 <img src="../../images/foto4.png" alt="baba4">
                 <div class="starsposition">
                     <span class="fa fa-star checked"></span>
@@ -102,7 +127,7 @@
                 <div class="justifytxt">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </section><!-- FIM DO HOME-BODY -->

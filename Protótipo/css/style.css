@@ -26,7 +26,7 @@ a{
 }
 
 li a:hover{
-    color: white!important;
+    color: #C1C1C8!important;
     transition: 0.5s!important;
 }
 
@@ -218,6 +218,8 @@ body {
 
 .boxdesign img {
     position: relative;
+    width: 102px;
+    border-radius: 100%;
     top: -51px;
     left: 64px;
 
@@ -649,6 +651,28 @@ IMG.displayed {
     font-size: 20px;
     border: none;
     resize: none;
+}
+
+.canditar-servico button{
+    background-color: rgba(255,255,255, 0.5);
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 60px;
+    -webkit-box-shadow: 10px 10px 21px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px -10px rgba(0,0,0,0.75);
+}
+
+.canditar-servico button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.babas-candidatas img{
+    width: 100px;
 }
 
 

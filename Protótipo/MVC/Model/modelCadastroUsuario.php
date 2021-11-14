@@ -1,6 +1,6 @@
 <?php 
 	include_once("modelBancoDeDados.php");
-	include_once("modelUsuarios.php");
+	include("modelUsuarios.php");
 
 	if(isset($_POST['nome-usuario'])){
 		$nomeUsuario = $_POST['nome-usuario'];
@@ -20,16 +20,19 @@
 
 		$addUsuario->execute();
 
-		for($i=0; $i <= count($totalUsuarios); $i++) { 
+		include("modelUsuarios.php");
+
+		for($i=0; $i < count($totalUsuarios); $i++) { 
 			
 		}
 
-		$idUsuario = $i;
+		$i--;
+
+		$idUsuario = $totalUsuarios[$i]['id_usuario'];
 
 		$addPerfilBaba = $pdo->prepare("INSERT INTO perfil_baba (id_usuario) VALUES ('$idUsuario')"); 
 		
-		$addPerfilFamilia = $pdo->prepare("INSERT INTO perfil_familia (id_usuario)VALUES ('$idUsuario')"); 	
-
+		$addPerfilFamilia = $pdo->prepare("INSERT INTO perfil_familia (id_usuario)VALUES ('$idUsuario')"); 
 		
 		$addPerfilBaba->execute();
 		$addPerfilFamilia->execute();
