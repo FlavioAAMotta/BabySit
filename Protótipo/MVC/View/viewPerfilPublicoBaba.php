@@ -71,17 +71,26 @@
 	</div>
 
 	<div class="row margem">
-		<div class="form-check margem">
-			<p>&emsp;<input class ="form-check-input" type="checkbox" name="podeAjudar" value="Tarefas simples" id="podeAjudar">
-			<label class="form-check-label" for="podeAjudar">
+		<div class="info-tarefas-perfil-box">
+			<p>&emsp;<input type="checkbox" checked onclick="return false;"/>
+			<label>	
 				Tarefas simples</p>
 			</label> 
 		</div>
 	</div>
 
 	<div class="row margem">
-		<div class="form-check margem">
-			<p>&emsp;<input class ="form-check-input" type="checkbox" name="podeAjudar" value="cozinhar" id="podeAjudar">
+		<div class="info-tarefas-perfil-box">
+			<p>&emsp;<input type="checkbox" checked onclick="return false;"/>
+			<label class="form-check-label" for="podeAjudar">
+				Fazer Compras</p>
+			</label> 
+		</div>
+	</div>
+
+	<div class="row margem">
+		<div class="info-tarefas-perfil-box">
+			<p>&emsp;<input type="checkbox" checked onclick="return false;"/>
 			<label class="form-check-label" for="podeAjudar">
 				Cozinhar</p>
 			</label> 
@@ -89,13 +98,14 @@
 	</div>
 
 	<div class="row margem">
-		<div class="form-check margem">
-			<p>&emsp;<input class ="form-check-input" type="checkbox" name="podeAjudar" value="licaoCasa" id="podeAjudar">
+		<div class="info-tarefas-perfil-box">
+			<p>&emsp;<input input type="checkbox" onclick="return false;"/>
 			<label class="form-check-label" for="podeAjudar">
 				Lição de casa</p>
 			</label> 
 		</div>
 	</div>
+	
 			
 	<div class="row margem">	
 		<div class="col-sm-5 margem">
