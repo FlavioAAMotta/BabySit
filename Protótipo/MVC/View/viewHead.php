@@ -42,14 +42,16 @@
 				<div id="minha-conta">
 					<div class="minha-conta">
 						<?php 
-							if(!empty($_SESSION['id-usuario-logado'])){
-								if($totalUsuarios[0]['logado_usuario'] == 1){
+						if(!empty($_SESSION['id-usuario-logado'])){
+							if($totalUsuarios[0]['logado_usuario'] == 1){
 						?>
 						<a  href="viewSelecionarPerfil.php">Minha Conta</a>
 						<?php }else{?>
 						<a  href="viewLogin.php">Log in</a>					
 
-						<?php }}?>
+						<?php }}else{?>
+						<a  href="viewLogin.php">Log in</a>	
+						<?php }?>
 					</div>
 
 					<div class="menu-minha-conta">

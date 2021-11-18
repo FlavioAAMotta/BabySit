@@ -2,27 +2,65 @@
     include_once("viewHeadPrincipal.php");
     include_once("../Model/modelBancoDeDados.php");   
 ?>
+    
+    <section>
+        <div class="container mb-4 mt-5 text-center">
+            
+           
+                <h1>Como funciona para as</h1>
+                <h1 class="baba">Babás?</h1>
+           
+        </div>
+        <div class="container p-5 text-center">
 
-    <h1 class="titulo">Como funciona para as babás?</h1> <br>
-    <main class="card1">
-        <h4>Faça seu cadastro</h4><br><br><br>
-        <p>Cadastre-se de acordo com suas habilidades ou experiências de tranalho</p>
-        <p class="ordem1">1</p>
-    </main> <br>
-    <main class="card2">
-        <h4>Ajuste seu perfil</h4><br>
-        <p>Usar uma foto de perfil e preencher todos os campos é importante para passar credibilidade, também é importante que atualize seus dias disponiveis para admissão de novos serviços.</p>
-        <p class="ordem2">2</p>
-    </main>
-    <main class="card3">
-        <h4>Procure e conheça</h4><br>
-        <p>Você poderá procurar ou ser solicitada a um serviço, entre no perfil da família e saiba sobre seus filhos e requisitos, assim você poderá tomar uma decisão melhor</p>
-        <p class="ordem3">3</p>
-    </main>
-    <main class="card4">
-        <br><br><br><br><br><br><br><br>
-        <p>É muito importante que tenha um perfil convidativo, por isso fique atenta aos campos a serem preenchidos, boa sorte :)</p>
-        <p class="ordem4">4</p>
-    </main>
+            <div class="row">
+                <div class="col-sm card_1 m-1">
+                    <div class="">
+                        <h3 class="mb-5 mt-4">Faça seu cadastro</h3>
+                        <h5 class=" header2">Cadastre-se de acordo com suas habilidades ou experiências de trabalho</h5>
+                    </div>
+                    <span>1</span>
+                </div>
+
+                <div class="col-sm">
+                    <div class="row card_2 m-1 mb-3">
+                        <div>
+                            <h1 class="mt-4">Ajuste seu perfil</h1>
+                        </div>
+                        <div class="header2">
+                            <h5>Usar uma foto de perfil e preencher todos os campos é importante para passar
+                                credibilidade,
+                                também é importante que atualize seus dias disponiveis para admissão de novos serviços
+                            </h5>
+                        </div>
+                        <span>2</span>
+                    </div>
+
+                    <div class="row card_3 m-1">
+                        <div>
+                            <h1>Procure e conheça</h1>
+                        </div>
+                        <div class="header2">
+                            <h5>Você poderá procurar ou ser solicitada a um serviço, entre
+                                no perfil da família e saiba sobre seus filhos e requisitos, assim você poderá tomar uma
+                                decisão melhor</h5>
+                        </div>
+                        <span>3</span>
+                    </div>
+
+                </div>
+
+                <div class="col-sm card_4 m-1">
+                    <div class="mt-5">
+                        <h5 class="header2"><strong>É muito importante que tenha um perfil convidativo, por isso fique
+                            atenta aos campos
+                            a serem preenchidos, boa sorte :)</strong></h5>
+                    </div>
+                    <span>4</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

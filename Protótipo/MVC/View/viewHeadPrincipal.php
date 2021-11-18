@@ -58,7 +58,9 @@
 					<?php }else{?>
 					<a  href="viewLogin.php">Log in</a>					
 
-					<?php }}?>
+					<?php }}else{?>
+					<a  href="viewLogin.php">Log in</a>	
+					<?php }?>	
 				</div>
 			</div>
 		</div><!-- FIM NAV-MENU-DESKTOP -->
