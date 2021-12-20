@@ -13,6 +13,13 @@
 
 	$nomeFamilia = $totalUsuarios[0]['nome_usuario'];
 	$_SESSION['nomeFamiliaServico'] = $nomeFamilia; 
+
+	if(!empty($_SESSION['id-usuario-logado'])){
+        $idUsuarioLogadoAtual = $_SESSION['id-usuario-logado'];
+    }else{
+        $idUsuarioLogadoAtual = null;
+    }
+
 ?>
 
 <div class= "row margem container-principal">
@@ -114,7 +121,7 @@
 	<?php 
 		$verificaCandidaturaBaba = false;
 		for($i = 0; $i < count($totalCandidatas); $i++){
-			if($totalCandidatas[$i]['id_usuario_baba'] == $_SESSION['id-usuario-logado']){
+			if($totalCandidatas[$i]['id_usuario_baba'] == $idUsuarioLogadoAtual){
 				$verificaCandidaturaBaba = true;
 			}
 		}
@@ -145,6 +152,7 @@
 				$idUsuario = $totalCandidatas[$i]['id_usuario_baba'];
 				include("../Model/modelVerificaUsuarios.php");
 		?>
+			
 			<img src="<?php echo $totalUsuarios[0]['foto_usuario']?>">			
 			<h4>Nome: <?php echo $totalCandidatas[$i]['nome_usuario_baba']?></h4>
 			<br><br>

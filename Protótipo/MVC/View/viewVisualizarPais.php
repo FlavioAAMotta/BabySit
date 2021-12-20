@@ -2,6 +2,13 @@
     include_once("viewHeadPrincipal.php");
     include_once("../Model/modelBancoDeDados.php");
     include_once("../Model/modelServicos.php");
+
+    if(!empty($_SESSION['id-usuario-logado'])){
+        $idUsuarioLogadoAtual = $_SESSION['id-usuario-logado'];
+    }else{
+        $idUsuarioLogadoAtual = null;
+    }
+
 ?>
     
     <!--div que contem a barra de pesquisa-->
@@ -24,7 +31,7 @@
                 if(($totalFamilia[$i]['servico_ativo_familia'] == '1') && ($totalFamilia[$i]['servico_andamento_familia'] != '1')){
                     $idUsuario = $totalFamilia[$i]['id_usuario'];
 
-                    if($_SESSION['id-usuario-logado'] != $idUsuario){
+                    if($idUsuarioLogadoAtual != $idUsuario){
         ?>
 
         <!--CARD 1-->

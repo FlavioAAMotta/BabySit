@@ -1,12 +1,13 @@
 /********************************************************************
 						ARQUIVO DO SITE COMPLETO
 ********************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap%27');
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif!important;
 }
 
 body{
@@ -46,18 +47,19 @@ li a:hover{
 
 .lista-menu-principal{
 	display: flex;
-	margin-top: 5px;
+	margin-top: 15px;
 	cursor: pointer;
+
 }
 
 .lista-menu-principal > li:hover{
-	color: white!important;
+	color: #808080!important;
 	transition: 0.5s!important;
 }
 
 li{
 	list-style-type: none;
-	margin: 5px 40px;
+	margin: 0px 40px;
     font-weight: bold;
 }
 
@@ -601,6 +603,11 @@ IMG.displayed {
 
 .babas-candidatas img{
     width: 100px;
+}
+
+.arquivo-flavia span{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 

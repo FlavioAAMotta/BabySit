@@ -9,6 +9,8 @@
 
 	$atualizarStatus = $pdo->prepare("UPDATE usuarios_teste SET logado_usuario = '0' WHERE id_usuario = '$idUsuarioLogado'");
 
+	$_SESSION['id-usuario-logado'] = null;
+
 	$atualizarStatus->execute();
 	
 	//header("Location: ../../index.php");
